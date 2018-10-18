@@ -36,7 +36,7 @@ $ npm install
 
 ## Usage
 
-To start the script running type the following command into the console, replaceing [source_project_id] [destination_project_id] [dataset_id]:
+To start the script running type the following command into the console, replacing [source_project_id] [destination_project_id] [dataset_id]:
 
 ```
 $ node app.js [source_project_id] [destination_project_id] [dataset_id]
