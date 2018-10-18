@@ -8,7 +8,7 @@ It uses a list of tables from the tables.json file
 ### Create the tables.json file
 1. Go to `https://bigquery.cloud.google.com/queries/`
 2. Click on **Compose Query**
-3. Enter the following query, replacing [PROJECT_ID].[DATASET_ID] with the source Project ID and Dataset ID:
+3. Enter the following query in the query window, replacing [PROJECT_ID].[DATASET_ID] with the source Project ID and Dataset ID:
 ```sql
 SELECT table_id FROM `[PROJECT_ID].[DATASET_ID].__TABLES_SUMMARY__`
 ```
@@ -22,15 +22,23 @@ SELECT table_id FROM `[PROJECT_ID].[DATASET_ID].__TABLES_SUMMARY__`
 2. Click on the Terminal icon in the toolbar to start the console
 3. Copy and paste this command into the console to copy the files:
 ```
-$ git clone
+$ git clone https://github.com/leonmightyhive/vodafoneCopyGAData.git
 ```
-3. Create a new folder by typing the command in the console `$ mkd`
-
-`$ pip install foobar`
+4. Go into the folder by entering the following command
+```
+$ cd vodafoneCopyGAData
+```
+5. Install the dependencies by entering the following command 
+```
+$ npm install
+```
+6. Upload the `tables.json` file by clicking the `⋮` icon in the top right of the console and select **Upload file**
 
 ## Usage
+
+To start the script running type the following command into the console:
 
 ```
 $ node app.js
 ```
-
+The script will copy each table one by one.
