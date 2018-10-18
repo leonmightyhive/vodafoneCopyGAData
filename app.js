@@ -27,12 +27,9 @@ async function copyTable(srcBigquery, destBigquery, datasetId, tableId) {
 const main = async () => {
 	// set the source project id
 	const srcProjectId = process.argv[2];
-	// const srcProjectId = "ga-cross-profile-settings";
 	// set the destination project id
-	// const destProjectId = "silicon-badge-219006";
 	const destProjectId = process.argv[3];
 	// set the dataset id
-	// const datasetId = "149006597";
 	const datasetId = process.argv[4];
 	// create bigquery client for the source project
 	const srcBigquery = new BigQuery({projectId: srcProjectId});
