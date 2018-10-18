@@ -39,6 +39,6 @@ $ npm install
 To start the script running type the following command into the console:
 
 ```
-$ node app.js
+$ node app.js [source_project_id] [destination_project_id] [dataset_id]
 ```
 The script will copy each table one by one.
